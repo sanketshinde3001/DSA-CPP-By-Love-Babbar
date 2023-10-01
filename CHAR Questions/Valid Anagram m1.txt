@@ -1,0 +1,17 @@
+class Solution {
+public:
+    bool isAnagram(string s, string t) {
+        std::sort(s.begin() , s.end());
+        std::sort(t.begin() , t.end());
+        if (s == t)
+            return true;
+        else
+            return false;    
+        
+    }
+};
+
+// Here we Simply Do the Sorting of both String First 
+// Once we get sorted string , we can compare both
+// if both are same then it's anagram else not
+// TC - O(n logn)   _sorting_
