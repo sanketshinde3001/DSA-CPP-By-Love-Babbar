@@ -1,0 +1,8 @@
+// here we use counting 
+// As we know the all characters have unique ASCII Value 
+// we can count number of char/ascii values one by one from both string and compare them
+// or first loop run on string , when it get char it add 1 to its position in arr of 256
+// and 2nd loop run to decrease it by 1 when get char
+// if it get empty array then it must be anagram
+// TC - O(m+n) + O(256)
+
