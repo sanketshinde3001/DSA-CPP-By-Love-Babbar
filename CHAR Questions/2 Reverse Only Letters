@@ -1,0 +1,28 @@
+class Solution {
+public:
+    string reverseOnlyLetters(string s) {
+        int a = 0 ; int b = s.size() - 1 ;
+        while (a < b){
+            if(isalpha(s[a]) && isalpha(s[b]))
+            {
+                swap (s[a] , s[b]);
+                a++;
+                b--;
+            }
+            else if (! isalpha(s[a]))
+            {
+                a++;
+            }
+            else if (! isalpha(s[b]))
+            {
+                b--;
+            }            
+        }
+        
+        return s;
+    }
+};
+
+
+//two pointer method , here we swap only if both are a-z or A-Z otherwise increment or decrement
+//TC - O(n)   --- n/2 bcz it meet at middle
