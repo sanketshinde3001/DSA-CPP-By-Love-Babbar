@@ -1,5 +1,6 @@
 // using function
 // we need to input - arr , size and target
+// no need flag
 
 #include<iostream>
 using namespace std;
