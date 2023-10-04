@@ -1,0 +1,30 @@
+// print extreme number
+
+
+#include <iostream>
+using namespace std;
+
+int linear(int arr[], int size)
+{
+    int srt = 0;
+    int end = (size - 1);
+    while (srt <= end)
+    {
+        if (srt == end)
+        {
+            cout << arr[srt] << " ";
+            break;
+        }
+
+        cout << arr[srt] << " " << arr[end] << " ";
+        srt++;
+        end--;
+    }
+}
+
+int main()
+{
+    int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11};
+    linear(arr, 11);
+    return 0;
+}
